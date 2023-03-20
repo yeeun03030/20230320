@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function callAlert(){
+            alert("알림메세지가 출력되는 내장함수 alert()");
+        }
+    </script>
+</head>
+<body>
+    <!--method : get(주소입력란에 선택한 값이 보임) post(주소입력란에 선택한 값이 안보임) -->
+    <form action="result.html" method="post">  
+        학교명 : <input type="text" size="15" name="schooName" placeholder="학교명과 학과"><br>
+        성명 : <input type="text" size="15" name="name"><br>
+        Password : <input type="password" size="15" name="pwd"><br>
+        성별 : <input type="radio" name="gender" value="female"> 여성
+         &nbsp; <input type="radio" name="gender" calue="male"> 남성<br>
+         <!-- radio에서 checked 라고 적으면 체크된 상태로 나옴 -->
+         <!--라디오 버튼은 둘중 하나만 선택하게 하려면, name이 같아야 한다.-->
+        파일 : <input type="file" name="file1"><br>
+
+        취미 : <input type="checkbox" name="read"> 독서 | <input type="checkbox" name="game"> 게임 | <input type="checkbox" name="movie"> 영화<br>
+        보이지 않는 data: <input type="hidden" name="page" value="10"><br>
+        <button type="submit">전송버튼</button>
+
+        <br><br>
+        <input type="image" src="https://via.placeholder.com/100X100"><br>
+        <button type="reset">취소버튼</button>
+        <button type="submit">전송버튼</button>
+        <button type="button" onclick="callAlert()">일반버튼</button>
+        (JavaScript 함수 호출 할 때 많이 사용)
+        
+        
+    </form>
+</body>
+</html>
